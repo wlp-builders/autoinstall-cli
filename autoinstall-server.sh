@@ -1,4 +1,10 @@
 #!/bin/bash
+# Exit if the first argument is not provided
+if [ -z "$1" ]; then
+    echo "Error: Missing required argument."
+    echo "Usage: $0 [domain.tld]"
+    exit 1
+fi
 
 # Base path for domains
 BASE_PATH="/var/www"
