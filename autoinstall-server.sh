@@ -38,7 +38,7 @@ CORE_PACK=$core_plugins_dir
 
 # Count existing folders and determine the next domain number
 DOMAIN_NUMBER=$(($(ls -l $BASE_PATH | grep ^d | wc -l) + 1))
-DOMAIN_NAME="wlp$DOMAIN_NUMBER.local"
+DOMAIN_NAME="$1"
 FOLDER_PATH="$BASE_PATH/$DOMAIN_NAME"
 
 # Update /etc/hosts
@@ -95,7 +95,7 @@ INSTALL_SCRIPT="$FOLDER_PATH/wlp-install/autoinstall-as-root.sh"
 URL_WITH_PARAMS=$(sudo bash $INSTALL_SCRIPT $FOLDER_PATH)
 echo "URL: $URL_WITH_PARAMS";
 
-# Open the URL with query parameters in Firefox
-firefox "$URL_WITH_PARAMS"
+# Executes with query parameters to create wlp-config file
+curl "$URL_WITH_PARAMS"
 
 
