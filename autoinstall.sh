@@ -93,9 +93,9 @@ echo "Reloaded Apache to apply new configuration"
 INSTALL_SCRIPT="$FOLDER_PATH/wlp-install/autoinstall-as-root.sh"
 # Run the installation script and capture output
 URL_WITH_PARAMS=$(sudo bash $INSTALL_SCRIPT $FOLDER_PATH)
-echo "URL: $URL_WITH_PARAMS";
+echo "URL: http://$DOMAIN_NAME";
 
 # Open the URL with query parameters in Firefox
-firefox "$URL_WITH_PARAMS"
+firefox "http://$DOMAIN_NAME"
 
 

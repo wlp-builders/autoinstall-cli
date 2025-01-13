@@ -99,9 +99,8 @@ echo "Reloaded Apache to apply new configuration"
 INSTALL_SCRIPT="$FOLDER_PATH/wlp-install/autoinstall-as-root.sh"
 # Run the installation script and capture output
 URL_WITH_PARAMS=$(sudo bash $INSTALL_SCRIPT $FOLDER_PATH)
-echo "URL: $URL_WITH_PARAMS";
+echo "HTTP URL: http://$DOMAIN_NAME\n";
+echo "Secure URL: https://$DOMAIN_NAME\n";
 
-# Executes with query parameters to create wlp-config file
-curl "$URL_WITH_PARAMS"
 
 
