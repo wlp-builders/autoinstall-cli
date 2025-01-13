@@ -1,5 +1,10 @@
 # autoinstall-cli
 Autoinstall CLI Tool to install WLP with most ease &amp; joy.
+
+![Screenshot](screenshot.png)
+
+
+## Usage:
 ```
 git clone https://github.com/wlp-builders/autoinstall-cli.git && cd autoinstall-cli
 sh autoinstall.sh # downloads and installs wlp core + whitelabelpress-wlp to /var/www/wlp{count}.local and fixes apache2 + /etc/hosts file
