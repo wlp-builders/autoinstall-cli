@@ -1,7 +1,7 @@
 # autoinstall-cli
 Autoinstall CLI Tool to install WLP with most ease &amp; joy.
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot2.png)
 
 
 ## Usage:
