@@ -31,7 +31,6 @@ Open your terminal of choice and copy-paste (shift+v) + enter:
 sudo apt-get update && apt-get install -y \
     sudo \
     apache2 \
-    openssh-server \
     mysql-server \
     php \
   php-mysql \
